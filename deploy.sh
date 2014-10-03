@@ -4,9 +4,10 @@ export APP_VERSION=`git rev-parse --short HEAD`
 pip install awscli
 
 # clean build artifacts and create the application archive (also ignore any files named .git* in any folder)
-#git clean -fd
+git clean -fd
 
 # precompile assets, ...
+mvn clean install
 
 # zip the application
 #zip -x *.git* -r "${APP_NAME}-${APP_VERSION}.zip" .
