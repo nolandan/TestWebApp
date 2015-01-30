@@ -21,6 +21,36 @@
       <version>4.8.1</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>org.glassfish.jersey.containers</groupId>
+          <artifactId>jersey-container-servlet-core</artifactId>
+          <version>2.4.1</version>
+          <!-- use the following artifactId if you don't need servlet 2.x compatibility -->
+          <!-- artifactId>jersey-container-servlet</artifactId -->
+      </dependency>
+      <!-- uncomment this to get JSON support
+      <dependency>
+          <groupId>org.glassfish.jersey.media</groupId>
+          <artifactId>jersey-media-moxy</artifactId>
+      </dependency>
+      -->
+      <dependency>
+          <groupId>org.thymeleaf</groupId>
+          <artifactId>thymeleaf-spring3</artifactId>
+          <version>2.1.4.RELEASE</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-web</artifactId>
+          <version>3.2.13.RELEASE</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-webmvc</artifactId>
+          <version>3.2.13.RELEASE</version>
+      </dependency>
   </dependencies>
 </project>
 
